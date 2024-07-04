@@ -15,6 +15,7 @@ import java.util.List;
 @RequestMapping("/admin/user")
 @SecurityRequirement(name = "bearerAuth")
 public class UserController {
+    //
     @Autowired
     UserMapper userMapper;
     @Autowired
