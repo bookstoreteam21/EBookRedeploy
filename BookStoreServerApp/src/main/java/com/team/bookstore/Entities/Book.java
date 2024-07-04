@@ -50,7 +50,7 @@ public class Book extends Auditable{
     @OneToMany(mappedBy = "book")
     @JsonIgnore
     Set<Order_Detail> order_detail = new HashSet<>();
-    @OneToMany(mappedBy = "book",fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "book")
     @JsonIgnore
     Set<Customer_Book> customer_book = new HashSet<>();
     @OneToMany(mappedBy = "book",fetch = FetchType.EAGER,cascade =
