@@ -162,7 +162,8 @@ public class PaymentService {
             } else {
                 vnp_Params.put("vnp_Locale", "vn");
             }
-            vnp_Params.put("vnp_ReturnUrl", VNPAYConfig.vnp_ReturnUrl);
+            vnp_Params.put("vnp_ReturnUrl", "https://ebookredeploy-production" +
+                    ".up.railway.app/BookStore/payment/vnpay-result");
             vnp_Params.put("vnp_IpAddr", vnp_IpAddr);
 
             Calendar cld = Calendar.getInstance(TimeZone.getTimeZone("GMT+7"));
